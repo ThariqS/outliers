@@ -17,8 +17,8 @@ module.exports = outliers;
  * @return {Array|Function}
  */
 
-function outliers(arr) {
-  if (isArray(arr)) return calc(arr);
+function outliers(arr,key) {
+  if (isArray(arr)) return calc(arr,key);
 
   var o = null;
   var k = 'string' == typeof arr && arr;
